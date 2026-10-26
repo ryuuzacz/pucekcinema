@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.5.0" provider-name="Radim Půček">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Jednoduchý Kodi frontend pro Jellyfin</summary>
+        <summary lang="en_GB">Simple Kodi frontend for Jellyfin</summary>
+        <description lang="cs_CZ">Procházení filmů, seriálů a anime z Jellyfinu a přehrávání originálních souborů v nativním Kodi přehrávači – bez transkódování a bez synchronizace Kodi databáze.</description>
+        <description lang="en_GB">Browse movies, TV shows and anime from Jellyfin and play the original files in Kodi's native player – no transcoding and no Kodi library sync.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>resources/logo.png</icon>
+            <fanart>resources/backdrop.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.pucekcinema" name="PucekCinema repozitář" version="1.5" provider-name="Radim Půček">
+    <extension point="xbmc.addon.repository" name="PucekCinema repozitář">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/</datadir>
+        </dir>
+        <dir minversion="19.0.0" maxversion="19.99.0">
+            <info compressed="false">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi19/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi19/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi19/</datadir>
+        </dir>
+        <dir minversion="20.0.0" maxversion="20.99.0">
+            <info compressed="false">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi20/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi20/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi20/</datadir>
+        </dir>
+        <dir minversion="21.0.0" maxversion="21.99.0">
+            <info compressed="false">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi21/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi21/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/kodi21/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Aktualizace doplňku PucekCinema</summary>
+        <summary lang="en_GB">Updates for the PucekCinema add-on</summary>
+        <description lang="cs_CZ">Repozitář, ze kterého Kodi instaluje a automaticky aktualizuje doplněk PucekCinema.</description>
+        <description lang="en_GB">Repository from which Kodi installs and automatically updates the PucekCinema add-on.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
