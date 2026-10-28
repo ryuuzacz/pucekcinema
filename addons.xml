@@ -21,7 +21,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="repository.pucekcinema" name="PucekCinema repozitář" version="1.5" provider-name="Radim Půček">
+<addon id="repository.pucekcinema" name="PucekCinema repozitář" version="1.6" provider-name="Radim Půček">
     <extension point="xbmc.addon.repository" name="PucekCinema repozitář">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/ryuuzacz/pucekcinema/main/addons.xml</info>

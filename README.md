@@ -4,7 +4,7 @@ Repozitář pro instalaci a automatické aktualizace Kodi doplňku PucekCinema (
 
 1. Kodi → Nastavení → Systém → Doplňky → povolit **Neznámé zdroje**.
 2. Doplňky → Instalovat ze ZIP souboru →
-   [`repository.pucekcinema/repository.pucekcinema-1.5.zip`](repository.pucekcinema/repository.pucekcinema-1.5.zip).
+   [`repository.pucekcinema/repository.pucekcinema-1.6.zip`](repository.pucekcinema/repository.pucekcinema-1.6.zip).
 3. Doplňky → Instalovat z repozitáře → PucekCinema repozitář → Video doplňky → PucekCinema.
 
 Kodi pak nové verze stahuje a instaluje automaticky.
