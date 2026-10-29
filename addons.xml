@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.013" provider-name="Radim Půček">
+<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.014" provider-name="Radim Půček">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -18,6 +18,14 @@
             <item library="context_unwatched.py">
                 <label>30233</label>
                 <visible>Window.IsActive(home) + String.StartsWith(ListItem.FileNameAndPath,plugin://plugin.video.pucekcinema/) + [String.Contains(ListItem.FileNameAndPath,action=play) | String.Contains(ListItem.FileNameAndPath,action=open) | String.Contains(ListItem.FileNameAndPath,action=series)] + Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            </item>
+            <item library="context_favorite_add.py">
+                <label>30282</label>
+                <visible>Window.IsActive(home) + String.StartsWith(ListItem.FileNameAndPath,plugin://plugin.video.pucekcinema/) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !String.IsEqual(ListItem.Property(pc_favorite),true)</visible>
+            </item>
+            <item library="context_favorite_remove.py">
+                <label>30283</label>
+                <visible>Window.IsActive(home) + String.StartsWith(ListItem.FileNameAndPath,plugin://plugin.video.pucekcinema/) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + String.IsEqual(ListItem.Property(pc_favorite),true)</visible>
             </item>
         </menu>
     </extension>
