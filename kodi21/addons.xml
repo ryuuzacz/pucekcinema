@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.pucekcinema" version="1.6.010" name="PucekCinema" provider-name="Radim Půček (Estuary: phil65, Ichabod Fletchman)">
+<addon id="skin.pucekcinema" version="1.6.011" name="PucekCinema" provider-name="Radim Půček (Estuary: phil65, Ichabod Fletchman)">
 	<requires>
-		<import addon="plugin.video.pucekcinema" version="1.6.010"/>
+		<import addon="plugin.video.pucekcinema" version="1.6.011"/>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
