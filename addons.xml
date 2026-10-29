@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.004" provider-name="Radim Půček">
+<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.005" provider-name="Radim Půček">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -8,19 +8,6 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="login"/>
-    <!-- home screen tiles: Kodi does not show the context entries of plugin items there (lists keep their own) -->
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="context_watched.py">
-                <label>30232</label>
-                <visible>Window.IsActive(home) + String.StartsWith(ListItem.FileNameAndPath,plugin://plugin.video.pucekcinema/) + [String.Contains(ListItem.FileNameAndPath,action=play) | String.Contains(ListItem.FileNameAndPath,action=open) | String.Contains(ListItem.FileNameAndPath,action=series)] + !Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            </item>
-            <item library="context_unwatched.py">
-                <label>30233</label>
-                <visible>Window.IsActive(home) + String.StartsWith(ListItem.FileNameAndPath,plugin://plugin.video.pucekcinema/) + [String.Contains(ListItem.FileNameAndPath,action=play) | String.Contains(ListItem.FileNameAndPath,action=open) | String.Contains(ListItem.FileNameAndPath,action=series)] + Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            </item>
-        </menu>
-    </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="cs_CZ">Jednoduchý Kodi frontend pro Jellyfin</summary>
         <summary lang="en_GB">Simple Kodi frontend for Jellyfin</summary>
