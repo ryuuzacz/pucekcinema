@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.020" provider-name="Radim Půček">
+<addon id="plugin.video.pucekcinema" name="PucekCinema" version="1.6.021" provider-name="Radim Půček">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
